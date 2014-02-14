@@ -8,4 +8,4 @@ puts practice_string.upcase
 puts practice_string.gsub('string',"'string'").capitalize
 puts "The string '#{practice_string}' has #{practice_string.length} characters"
 puts practice_string.reverse
-puts ("practice " * 3).chop + "!"
+puts "#{((practice_string.match(/p.*e/)[0] + " ") * 3).chop + "!" }"

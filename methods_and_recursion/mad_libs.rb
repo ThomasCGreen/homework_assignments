@@ -21,5 +21,5 @@ def print_mad_lib (mad_lib_text, previous_parts_of_speech)
   end
 end
 
-mad_lib = File.read("../methods_and_recursion/mad_lib.txt")
+mad_lib = File.read(File.join(File.dirname(__FILE__), "mad_lib.txt"))
 print_mad_lib(mad_lib, [])

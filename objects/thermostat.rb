@@ -31,15 +31,15 @@
       if (@thermostat_on)
         @inside_temp += 0.1 # furnace adds some heat
       end
+      print "#{@sim_time}: Temperature is now #{@inside_temp}."
       if (@thermostat_on && (@inside_temp > @setpoint_temp + 1.0))
-        puts "#{@sim_time}: Temperature is now #{@inside_temp}. Thermostat has clicked 'off'"
+        print "Thermostat has clicked 'off'"
         @thermostat_on = false
       elsif ((!@thermostat_on) && (@inside_temp < @setpoint_temp - 1.0))
-        puts "#{@sim_time}: Temperature is now #{@inside_temp}. Thermostat has clicked 'on'"
+        print "Thermostat has clicked 'on'"
         @thermostat_on = true
-      else
-        puts "#{@sim_time}: Temperature is now #{@inside_temp}."
       end
+      puts ''
     end
   end
 end

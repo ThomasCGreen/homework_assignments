@@ -3,7 +3,7 @@ require File.join(File.dirname(__FILE__),'../../lib/cash_register')
 
 describe CashRegister do
   describe "total" do
-    it "should be initialed with a total of 0.00" do
+    it "should be initialized with a total of 0.00" do
 
       expect(subject.total).to eq(0.00)
     end

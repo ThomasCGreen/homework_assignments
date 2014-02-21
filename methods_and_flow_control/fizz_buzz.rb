@@ -7,4 +7,4 @@ def fizzbuzz(number)  # number to convert to fizzbuzz text
   return fizz_buzz
 end
 
-(1..100).each {|i| puts fizzbuzz(i)}
+(1..100).each {|number| puts fizzbuzz(number)}

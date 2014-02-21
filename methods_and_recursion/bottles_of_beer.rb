@@ -12,7 +12,7 @@ end
 
 
 def bottles_of_beer(number_of_bottles)
-  next_bottles = number_of_bottles -1
+  next_bottles = number_of_bottles - 1
   if (0 == number_of_bottles)
     puts "No more bottles of beer on the wall, no more bottles of beer."
     puts "Go to the store and buy some more, 99 bottles of beer on the wall."
@@ -24,7 +24,7 @@ def bottles_of_beer(number_of_bottles)
     print "Take one down and pass it around, "
     print bottles(number_of_bottles-1)
     puts "of beer on the wall."
-    puts
+    puts ""
     bottles_of_beer(number_of_bottles-1)
   end
 end

@@ -4,14 +4,14 @@ class Crypt
     convert_array.push(" ")
     encrypt_array = convert_array.rotate(key)
     plain_array = plain_text.downcase.split("")
-    return((plain_array.map.each { |char| encrypt_array[convert_array.index(char)]}).join)
+    return((plain_array.map { |char| encrypt_array[convert_array.index(char)]}).join)
   end
 
   def self.decrypt(encrypted_text, key=nil)
     if key
       encrypt(encrypted_text, -key)
     else
-      (0..25).map.each { |key| encrypt(encrypted_text, -key)}
+      (0..25).map { |key| encrypt(encrypted_text, -key)}
     end
   end
 end
